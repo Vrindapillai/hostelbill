@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hostel Bill Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Hostel Bill Calculator</h1>
+
+    <form id="hostelForm">
+      <label for="days">Number of Days:</label>
+      <input type="number" id="days" placeholder="e.g., 30" required>
+
+      <label for="roomRate">Room Rent per Day (₹):</label>
+      <input type="number" id="roomRate" placeholder="e.g., 500" required>
+
+      <label for="messRate">Mess Bill per Day (₹):</label>
+      <input type="number" id="messRate" placeholder="e.g., 200" required>
+
+      <button type="button" onclick="calculateBill()">Calculate Bill</button>
+      <button type="button" onclick="clearForm()">Clear</button>
+    </form>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
